@@ -211,7 +211,24 @@ def load_stock_data(ticker):
     
     return df
     
+def load_stock_data_volatility(ticker):
     
+    '''Loading stock data from csv files for volatility
+    parameter is the ticker symbol
+    returns the ticker dataframe'''
+    
+    file_name = f'Data/Volatility/{ticker}_data.csv'
+    
+    
+    df = pd.read_csv(file_name, parse_dates=['time'], infer_datetime_format=True)
+    df.columns = ['date', 'open', 'high', 'low', 'close', 'volume']
+    
+        
+    df = df.sort_values(by='date')
+    df = df.reset_index().drop(columns=['index'])
+    df = df.reset_index().drop(columns=['index'])
+    
+    return df    
 
 
 def plot_stock_rsi(df, period=14):
