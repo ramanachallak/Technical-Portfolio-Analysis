@@ -1,3 +1,5 @@
+https://docs.google.com/presentation/d/1AI9MgTkg9nNMocFFrQsWJK9IHLWC9UWhRIQ-epTOMKc/edit?usp=sharing
+
 # Technical Portfolio Analysis
 
 
